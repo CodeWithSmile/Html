@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table.td1,td,th
+     {
+      border: 1px solid black;
+      border-collapse: collapse;
+      /* You can hide columns with the visibility: collapse property: */
+      
+    }
+    tr:hover
+    {
+      background-color: aquamarine;
+    }
+
+    th:nth-child(even),
+    td:nth-child(odd) {
+      background-color: #D6EEEE;
+    }
+
+    #t1:nth-child(even) {
+      background-color: aqua;
+      /* padding: 15px; */
+      /* border-spacing: 30px; */
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Striped Table</h2>
+  <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:
+  </p>
+
+  <table class="tb1" style="width:100%">
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+      <th>FRI</th>
+      <th>SAT</th>
+      <th>SUN</th>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </table>
+
+  <hr>
+  <table border="1px" style="border-radius: 3px; border-style:ridge ;border-color: blue;">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>
+  <hr>
+  <table border="1px">
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+  <hr>
+  <table id="t1" border="5px"="width:100%">
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+  </table>
+</body>
+
+</html>

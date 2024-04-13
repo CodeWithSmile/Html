@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display:inline-flex;">
+        <div>
+            <p><b>Textfield</b></p>
+            <form autocomplete="on">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+        </div>
+        <div>
+            <p>
+                <b>Radio button</b>
+            </p>
+            <p>Choose your favorite Web language:</p>
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </form>
+        </div>
+        <div>
+            <p><b>checkbox</b></p>
+            <form>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+            </form>
+        </div>
+        <div>
+            <p><b>submit button</b></p>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div>
+            <p><b>dropdwon list</b></p>
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="2" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <p><b>textarea</b></p>
+            <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea>
+        </div>
+        <div>
+            <p><b>feilset&legend </b></p>
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </div>
+        <div>
+            <p>
+                <b>
+                    datalist
+                </b>
+            <form action="/action_page.php">
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <input type="submit">
+            </form>
+            </p>
+        </div>
+    </div>
+    <div>
+        <p><b>output tag</b></p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+            </form>
+            
+            <p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+    </div>
+</body>
+</html>
